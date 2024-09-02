@@ -1,0 +1,15 @@
+{% extends "base.html" %} {%load static%}{% block content %}
+<div class="container m-auto row row-cols-1 row-cols-md-3 g-4">
+  {% for i in categories %}
+  <div class="col">
+    <div class="card">
+      <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{i.strCategory}}</h5>
+        <p class="card-text">{{i.strCategoryDescription|truncatewords:10}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

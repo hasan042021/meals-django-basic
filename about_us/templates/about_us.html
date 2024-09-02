@@ -1,0 +1,40 @@
+{% extends "base.html" %}{% load static %}{% block content %}
+
+<div style="height: 23vh; overflow: hidden">
+  <img
+    style="opacity: 87%"
+    class="d-block w-100"
+    src="{% static 'images/about-1.jpg' %} "
+    alt=""
+  />
+</div>
+<div
+  class="bg-body-tertiary p-5 d-flex align-items-center justify-content-between"
+>
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img
+          src="{% static 'images/about-1.jpg' %} "
+          class="w-100 rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">About m-foodies</h2>
+          <p class="small text-secondary">
+            Discover the flavors of the world at m-foodies, your one-stop
+            destination for delicious and authentic cuisine. Our passionate team
+            of chefs curates a diverse menu featuring dishes from around the
+            globe, all made with fresh, high-quality ingredients.
+          </p>
+
+          <a class="btn btn-success">ContactUs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

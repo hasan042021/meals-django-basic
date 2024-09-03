@@ -5,6 +5,9 @@
     <div class="card">
       <img src="{{i.strCategoryThumb}}" class="card-img-top" alt="..." />
       <div class="card-body">
+        <p class="card-text small p-0 m-0 text-secondary">
+          Meal Id: {{i.idCategory}}
+        </p>
         <h5 class="card-title">{{i.strCategory}}</h5>
         <p class="card-text">{{i.strCategoryDescription|truncatewords:10}}</p>
       </div>
